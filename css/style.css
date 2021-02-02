@@ -1638,3 +1638,8 @@ a:focus {
         text-align: center;
     }
 }
+
+.form_center{
+    position: relative;
+    left: 25%;
+}
