@@ -25,11 +25,13 @@
                         <div class="col-md-6 col-lg-4">
                             <div class="footer-link">
                                 <h2>Useful Pages</h2>
-                                <a href="">About Us</a>
-                                <a href="">Practices</a>
-                                <a href="">Attorneys</a>
-                                <a href="">Case Studies</a>
-                                <a href="">FAQs</a>
+                                <a href="index.php">Home</a>
+                                <a href="lawyer.php">Lawyers</a>
+                                <a href="signin.php">Sign In</a>
+                                <a href="signup.php">Sign Up</a>
+                                <a href="about.php">About</a>
+                                <a href="contact.php">Contact</a>
+
                             </div>
                         </div>
                         <div class="col-md-6 col-lg-4">
