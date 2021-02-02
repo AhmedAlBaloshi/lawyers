@@ -19,7 +19,7 @@
                  <div class="navbar-nav ml-auto" id="nav-item">
                     
                      <a href="index.php" id="home" class="nav-item nav-link <?php if($page == 'index'){ echo  'active'; }?>">Home</a>
-                     <a href="lawyer.php" id="lawyer" class="nav-item nav-link <?php if($page == 'lawyer'){ echo  'active'; }?>">lawyer</a>
+                     <a href="lawyer.php" id="lawyer" class="nav-item nav-link <?php if($page == 'lawyer'){ echo  'active'; }?>">lawyers</a>
                      <a href="signin.php" id="signin" class="nav-item nav-link <?php if($page == 'signin'){ echo  'active'; }?>">Sign In</a>
                      <a href="signup.php" id="signup" class="nav-item nav-link <?php if($page == 'signup'){ echo  'active'; }?>">Sign Up</a>
                      <a href="about.php" id="about" class="nav-item nav-link <?php if($page == 'about'){ echo  'active'; }?>">About</a>
