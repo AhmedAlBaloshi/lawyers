@@ -2,10 +2,21 @@
 <html lang="en">
 
 <head>
-<?php $page = 'lawyer' ?>
+    <?php $page = 'lawyer' ?>
 
     <title>Lawyer-LawyerPage</title>
     <?php include "layout/header.php" ?>
+
+    <?php
+    $service_id;
+    if (isset($_GET['service'])) {
+        $service_id = $_GET['service'];
+    }
+    $database  = new Database();
+    $query = "SELECT * FROM services";
+    $services = $database->query($query);
+    $database->close();
+    ?>
 
 <body>
     <div class="wrapper">
@@ -48,15 +59,25 @@
         <div class="portfolio">
             <div class="container">
                 <div class="section-header">
-                    <h2>Our Case Studies</h2>
+                    <h2>Our Case Services</h2>
                 </div>
                 <div class="row">
                     <div class="col-12">
                         <ul id="portfolio-flters">
-                            <li data-filter="*" class="filter-active">All</li>
-                            <li data-filter=".first">Civil</li>
-                            <li data-filter=".second">Criminal</li>
-                            <li data-filter=".third">Business</li>
+                            <a href="lawyer.php">
+                                <li <?php if (empty($service_id)) {
+                                        echo 'class="filter-active"';
+                                    } ?>>All</li>
+                            </a>
+                            <?php foreach ($services as $service) : ?>
+                                <a href="lawyer.php?service=<?php echo $service['id']; ?>">
+                                    <li <?php if (isset($service_id)) {
+                                            if ($service_id == $service['id']) {
+                                                echo 'class="filter-active"';
+                                            }
+                                        } ?>><?php echo $service['name']; ?></li>
+                                </a>
+                            <?php endforeach ?>
                         </ul>
                     </div>
                 </div>
