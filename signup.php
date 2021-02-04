@@ -36,18 +36,19 @@
                 <div class="row">
                     <div class="col-md-6  text-center form_center">
                         <div class="contact-form">
-                            <form>
+                            <form action="signup-post.php" method="POST">
+                            <?php if(isset($_GET['err'])){ echo '<p class="btn-outline-danger">'.$_GET['err'].'</p>'; } ?>
                                 <div class="form-group">
-                                    <input type="text" class="form-control text-center" placeholder="Username" required="required" />
+                                    <input type="text" class="form-control text-center" name="name" placeholder="Username" required="required" />
                                 </div>
                                 <div class="form-group">
-                                    <input type="email" class="form-control text-center" placeholder="Email" required="required" />
+                                    <input type="email" class="form-control text-center" name="email" placeholder="Email" required="required" />
                                 </div>
                                 <div class="form-group">
-                                    <input type="password" class="form-control text-center" placeholder="Password" required="required" />
+                                    <input type="password" class="form-control text-center" name="password" placeholder="Password" required="required" />
                                 </div>
                                 <div class="form-group">
-                                    <input type="password" class="form-control text-center" placeholder="Confirm Password" required="required" />
+                                    <input type="password" class="form-control text-center" name="confirm_password" placeholder="Confirm Password" required="required" />
                                 </div>
                                 <div>
                                     <button class="btn" type="submit">Register Now</button>
