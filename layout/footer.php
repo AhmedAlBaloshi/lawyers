@@ -23,8 +23,8 @@ $database->close();
                     <div class="col-md-6 col-lg-4">
                         <div class="footer-link">
                             <h2>Services Areas</h2>
-                            <?php foreach($services as $serve): ?>
-                            <a href=""><?php echo $serve['name'] ?></a>
+                            <?php foreach($services as $service): ?>
+                            <a href=""><?php echo $service['name'] ?></a>
                             <?php endforeach ?>
                         </div>
                     </div>
