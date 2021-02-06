@@ -31,7 +31,7 @@
  <div class="contact">
             <div class="container">
                 <div class="section-header">
-                    <h2>Register</h2>
+                    <h2>Sign Up</h2>
                 </div>
                 <div class="row">
                     <div class="col-md-6  text-center form_center">
@@ -51,11 +51,12 @@
                                     <input type="password" class="form-control text-center" name="confirm_password" placeholder="Confirm Password" required="required" />
                                 </div>
                                 <div>
-                                    <button class="btn" type="submit">Register Now</button>
+                                    <button class="btn" type="submit">Sign up</button>
                                 </div>
-                                <hr>
-                                <p class="mt-3 ">Already a member ? <span class="font-weight-bold font-italic"><a href="signin.php"> Login here</a></span></p>
                             </form>
+                            <hr>
+                                <p class="mt-3 ">Already a member ? <span class="font-weight-bold font-italic"><a href="signin.php">Login here.</a></span></p>
+                                <p class="mt-3 ">Are you lawyer ? <span class="font-weight-bold font-italic"><a href="lawyer_register.php">Register as lawyer.</a></span></p>
                         </div>
                     </div>
                 </div>
