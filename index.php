@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <?php $page = 'index';?>
+    <?php $page = 'index'; ?>
     <title>Lawyer-Home</title>
     <?php include "layout/header.php" ?>
 
@@ -24,27 +24,21 @@
                 <div class="carousel-item active">
                     <img src="img/carousel-1.jpg" alt="Carousel Image">
                     <div class="carousel-caption">
-                        <h1 class="animated fadeInLeft">We fight for your justice</h1>
-                        <p class="animated fadeInRight">Lorem ipsum dolor sit amet elit. Mauris odio mauris...</p>
-                        <a class="btn animated fadeInUp" href="#">Get free consultation</a>
+                        <h1 class="animated fadeInLeft">A passion for justice. The experience for win</h1>
                     </div>
                 </div>
 
                 <div class="carousel-item">
                     <img src="img/carousel-2.jpg" alt="Carousel Image">
                     <div class="carousel-caption">
-                        <h1 class="animated fadeInLeft">We prepared to oppose for you</h1>
-                        <p class="animated fadeInRight">Lorem ipsum dolor sit amet elit. Mauris odio mauris...</p>
-                        <a class="btn animated fadeInUp" href="#">Get free consultation</a>
+                        <h1 class="animated fadeInLeft">Experienced lawyers. Tailored approach</h1>
                     </div>
                 </div>
 
                 <div class="carousel-item">
                     <img src="img/carousel-3.jpg" alt="Carousel Image">
                     <div class="carousel-caption">
-                        <h1 class="animated fadeInLeft">We fight for your privilege</h1>
-                        <p class="animated fadeInRight">Lorem ipsum dolor sit amet elit. Mauris odio mauris...</p>
-                        <a class="btn animated fadeInUp" href="#">Get free consultation</a>
+                        <h1 class="animated fadeInLeft">Special needs require special lawyers</h1>
                     </div>
                 </div>
             </div>
@@ -241,7 +235,7 @@
         <div class="team">
             <div class="container">
                 <div class="section-header">
-                    <h2>Meet Our Expert Attorneys</h2>
+                    <h2>Meet Our Expert Lawyers</h2>
                 </div>
                 <div class="row">
                     <div class="col-lg-3 col-md-6">
@@ -316,93 +310,6 @@
             </div>
         </div>
         <!-- Team End -->
-
-
-        <!-- FAQs Start -->
-        <div class="faqs">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-5">
-                        <div class="faqs-img">
-                            <img src="img/faqs.jpg" alt="Image">
-                        </div>
-                    </div>
-                    <div class="col-md-7">
-                        <div class="section-header">
-                            <h2>Have A Questions?</h2>
-                        </div>
-                        <div id="accordion">
-                            <div class="card">
-                                <div class="card-header">
-                                    <a class="card-link collapsed" data-toggle="collapse" href="#collapseOne" aria-expanded="true">
-                                        <span>1</span> Lorem ipsum dolor sit amet?
-                                    </a>
-                                </div>
-                                <div id="collapseOne" class="collapse show" data-parent="#accordion">
-                                    <div class="card-body">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non.
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <div class="card-header">
-                                    <a class="card-link" data-toggle="collapse" href="#collapseTwo">
-                                        <span>2</span> Lorem ipsum dolor sit amet?
-                                    </a>
-                                </div>
-                                <div id="collapseTwo" class="collapse" data-parent="#accordion">
-                                    <div class="card-body">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non.
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <div class="card-header">
-                                    <a class="card-link" data-toggle="collapse" href="#collapseThree">
-                                        <span>3</span> Lorem ipsum dolor sit amet?
-                                    </a>
-                                </div>
-                                <div id="collapseThree" class="collapse" data-parent="#accordion">
-                                    <div class="card-body">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non.
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <div class="card-header">
-                                    <a class="card-link" data-toggle="collapse" href="#collapseFour">
-                                        <span>4</span> Lorem ipsum dolor sit amet?
-                                    </a>
-                                </div>
-                                <div id="collapseFour" class="collapse" data-parent="#accordion">
-                                    <div class="card-body">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non.
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <div class="card-header">
-                                    <a class="card-link" data-toggle="collapse" href="#collapseFive">
-                                        <span>5</span> Lorem ipsum dolor sit amet?
-                                    </a>
-                                </div>
-                                <div id="collapseFive" class="collapse" data-parent="#accordion">
-                                    <div class="card-body">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non.
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <a class="btn" href="">Ask more</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- FAQs End -->
-
-
-
-
 
         <?php include "layout/footer.php" ?>
 
