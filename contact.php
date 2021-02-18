@@ -54,7 +54,7 @@
                                     <input type="text" class="form-control" placeholder="Subject" required="required" />
                                 </div>
                                 <div class="form-group">
-                                    <textarea class="form-control" placeholder="Message" required="required"></textarea>
+                                    <textarea class="form-control" style="height: 185px;" placeholder="Message" required="required"></textarea>
                                 </div>
                                 <div>
                                     <button class="btn" type="submit">Send Message</button>
