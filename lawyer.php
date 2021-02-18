@@ -20,27 +20,7 @@
 
 <body>
     <div class="wrapper">
-
-
         <?php include "layout/nav.php" ?>
-
-
-        <!-- Page Header Start -->
-        <div class="page-header">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <h2>Lawyer</h2>
-                    </div>
-                    <div class="col-12">
-                        <a href="index.php">Home</a>
-                        <a href="lawyer.php">Lawyer</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Page Header End -->
-
         <!-- Newsletter Start -->
         <div class="newsletter">
             <div class="container">

@@ -8,27 +8,7 @@
 
 <body>
     <div class="wrapper">
-
         <?php include "layout/nav.php" ?>
-
-
-        <!-- Page Header Start -->
-        <div class="page-header">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <h2>Contact Us</h2>
-                    </div>
-                    <div class="col-12">
-                        <a href="">Home</a>
-                        <a href="">Contact Us</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Page Header End -->
-
-
         <!-- Contact Start -->
         <div class="contact">
             <div class="container">
