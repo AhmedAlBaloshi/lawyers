@@ -3,11 +3,8 @@
 
 <head>
     <?php $page = 'lawyer' ?>
-
     <title>Lawyer-LawyerPage</title>
-    <?php include "layout/header.php" ?>
-
-    <?php
+    <?php include "layout/header.php";
     $service_id;
     if (isset($_GET['service'])) {
         $service_id = $_GET['service'];
