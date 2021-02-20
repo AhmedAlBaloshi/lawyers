@@ -79,3 +79,25 @@ $database->close();
 </div>
 <!-- Footer End -->
 <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+
+<script>
+        function showPass() {
+            
+            document.getElementById('showPass').className = "fa fa-eye-slash";
+            document.getElementById('pass').type = "text";
+            document.getElementById('confPass').type = "text";
+            document.getElementById('showPass').setAttribute('onclick', 'hidePass()');
+            document.getElementById('showPass').setAttribute('id', 'hidePass');
+        }
+        
+        function hidePass() {
+            
+            document.getElementById('hidePass').className = "fa fa-eye";
+            document.getElementById('pass').type = "password";
+            document.getElementById('confPass').type = "password";
+            document.getElementById('hidePass').setAttribute( "onclick", "showPass()" );
+            document.getElementById('hidePass').setAttribute('id', 'showPass');
+        }
+
+    </script>

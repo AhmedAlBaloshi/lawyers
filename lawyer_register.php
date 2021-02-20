@@ -10,25 +10,18 @@
 <body>
     <div class="wrapper">
 
-        <?php include "layout/nav.php" ?>
+        <?php include "layout/nav.php";
 
+        $database  = new Database();
+        $query = "SELECT * FROM `services`";
+        $services = $database->query($query);
 
-        <!-- Page Header Start -->
-        <div class="page-header">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <h2>Sign Up</h2>
-                    </div>
-                    <div class="col-12">
-                        <a href="index.php">Home</a>
-                        <a href="signup.php">Sign Up</a>
-                        <a href="signup.php">Lawyer Register</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Page Header End -->
+        $query = "SELECT * FROM `region`";
+        $regions = $database->query($query);
+
+        $database->close();
+        ?>
+
         <!-- Register form -->
         <div class="contact">
             <div class="container">
@@ -38,27 +31,44 @@
                 <div class="row">
                     <div class="col-md-6  text-center form_center">
                         <div class="contact-form">
-                            <form>
+                            <form action="lawyerRegister-post.php" method="POST">
+                                <?php if (isset($_GET['err'])) {
+                                    echo '<p class="btn-outline-danger">' . $_GET['err'] . '</p>';
+                                } ?>
+
                                 <div class="form-group">
-                                    <input type="text" class="form-control text-center" placeholder="Name" required="required" />
+                                    <input type="text" class="form-control text-center" name="name" placeholder="Name" required="required" />
                                 </div>
                                 <div class="form-group">
-                                    <input type="file" class="form-control " placeholder="Image" required="required" accept="image/*" />
+                                    <input type="file" class="form-control" name="image" placeholder="Image" required="required" accept="image/*" />
                                 </div>
-                                <select class="form-group form-control services">
-                                    <option>Services</option>
+                                <div class="form-group">
+                                <select class="form-control  services" name="region_id">
+                                    <option>Select Region</option>
+                                    <?php foreach ($regions as $region) :
+                                    ?><option value="<?php echo $region['id'] ?>"> <?php echo $region['name'] ?></option>
+                                    <?php endforeach ?>
                                 </select>
-                                <div class="form-group">
-                                    <input type="email" class="form-control text-center" placeholder="Email" required="required" />
                                 </div>
                                 <div class="form-group">
-                                    <input type="password" class="form-control text-center" placeholder="Password" required="required" />
+                                <select class="form-control services" name="service">
+                                    <option>Select Service</option>
+                                    <?php foreach ($services as $service) :
+                                    ?><option value="<?php echo $service['id'] ?>"> <?php echo $service['name'] ?></option>
+                                    <?php endforeach ?>
+                                </select>
                                 </div>
                                 <div class="form-group">
-                                    <input type="password" class="form-control text-center" placeholder="Confirm Password" required="required" />
+                                    <input type="email" class="form-control text-center" name="email" placeholder="Email" required="required" />
                                 </div>
                                 <div class="form-group">
-                                    <textarea class="form-control text-center" placeholder="Lawyer Detail" required="required"></textarea>
+                                    <input type="password" class="form-control text-center" name="password" placeholder="Password" required="required" />
+                                </div>
+                                <div class="form-group">
+                                    <input type="password" class="form-control text-center" name="confirm_password" placeholder="Confirm Password" required="required" />
+                                </div>
+                                <div class="form-group">
+                                    <textarea class="form-control text-center" name="detail" placeholder="Lawyer Detail" required="required" rows="2" cols="50"></textarea>
                                 </div>
                                 <div>
                                     <button class="btn" type="submit">Register Now</button>
