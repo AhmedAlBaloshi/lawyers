@@ -1416,3 +1416,57 @@ a:hover, a:active, a:focus {
     border-radius: 0px;
     text-align-last: center;
 }
+
+.button {
+    position: absolute;
+    top: 40px;
+    right: 0px;
+    height: 50px;
+    width: 180px;
+    padding: 8px 20px;
+    font-size: 15px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #aa9166;
+    background: #121518;
+    border-radius: 0;
+    border: 2px solid #aa9166;
+    transition: .3s;
+    border-radius: 5px;
+}
+
+.button:hover {
+    color: #121518;
+    background: #aa9166;
+}
+.lawyer_profile{
+    font-family: sans-serif;
+    color: #121518;; 
+    font-weight: bold;
+    font-size: 18px;
+}
+.lawyer_profile span{
+    font-weight: lighter;
+    color: rgb(45, 45, 45);
+    padding-left: 20px;
+    font-size: 17px;
+}
+.lawyer_profile a :hover{
+    color: #aa9166 ;
+    text-decoration: underline;
+    transition: .1s;
+}
+.detail{
+    position: relative;
+    bottom: 15px;
+    text-indent: 130px;
+    text-align: justify;
+    letter-spacing: .5px;
+    font-weight: lighter;
+    font-size: 17px;
+    color: rgb(45, 45, 45);
+}
+.celender{
+    margin-left: 91px;
+    width: 180px;
+}
