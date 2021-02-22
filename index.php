@@ -60,10 +60,6 @@
         </div>
         <!-- Carousel End -->
 
-
-
-
-
         <!-- About Start -->
         <div class="about">
             <div class="container">
