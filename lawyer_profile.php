@@ -4,7 +4,24 @@
 <head>
     <?php $page = 'lawyer'; ?>
     <title>Lawyer-Profile</title>
-    <?php include "layout/header.php" ?>
+    <?php include "layout/header.php";
+    $database  = new Database();
+
+    $id = $_GET['lawyer_id'];
+
+    $query = "SELECT U.id AS `id`, U.`name` AS `name`, L.image AS  `image`, S.`name` AS `service_name`, R.`name` AS region_name, L.detail AS detail 
+    FROM users U
+    JOIN lawyers L ON U.id = L.user_id
+    JOIN services S 
+    ON L.service_id = S.id
+    JOIN region R 
+    ON R.id = L.region_id WHERE U.id = $id";
+
+    $lawyer = $database->query($query);
+    $database->close();
+    // var_dump($lawyer);
+    // exit;
+    ?>
 
 <body>
     <div class="wrapper">
@@ -13,21 +30,23 @@
         <div class="container">
             <center>
                 <div class="section-header">
-                    <h2>John Deo</h2>
+                    <h2> <?php echo $lawyer['name'] ?> </h2>
                 </div>
             </center>
             <div class="row">
                 <div class="col-sm-3">
                     <div class="card" style="width:250px;">
-                        <img src="img/team-4.jpg" alt="Card image" style="width:100% ; height: 300px;">
+                        <img src="img/<?php echo $lawyer['image'] ?>" alt="Card image" style="width:100% ; height: 300px;">
                     </div>
                 </div>
                 <div class="col-sm-6">
                     <div style="width:500px">
-                       <p class="lawyer_profile">Service :<a href="#"><Span>Criminal</Span></a></p>
-                       <p class="lawyer_profile">Location :<Span>Karachi</Span></p>
-                       <p class="lawyer_profile">Laywer Detail :</p>
-                       <p class="detail">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                        <p class="lawyer_profile">Service :<a href="#"><Span> <?php echo $lawyer['service_name'] ?> </Span></a></p>
+                        <p class="lawyer_profile">Location :<Span> <?php echo $lawyer['region_name'] ?> </Span></p>
+                        <p class="lawyer_profile">Laywer Detail :</p>
+                        <p class="detail"> 
+                        <?php echo $lawyer['detail'] ?>
+                         </p>
                     </div>
                 </div>
                 <div class="col-sm-3 mb-5">

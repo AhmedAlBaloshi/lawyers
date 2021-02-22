@@ -6,6 +6,7 @@
         $image = $_POST['image'];
         $email = $_POST['email'];
         $pass = $_POST['password'];
+        $service = $_POST['service'];
         $region_id = $_POST['region_id'];
         $confirmPass = $_POST['confirm_password'];
         $detail = $_POST['detail'];
@@ -17,7 +18,7 @@
             $user = $database->insert($query);
             $user_id = $database->getLastId();
 
-            $lawyerQuery = "INSERT INTO lawyers (`user_id`, `image`, `detail`, `region_id`) VALUES ($user_id, '$image', '$detail', $region_id)";
+            $lawyerQuery = "INSERT INTO lawyers (`user_id`, `image`, `detail`, `region_id`, `service_id`) VALUES ($user_id, '$image', '$detail', $region_id, $service)";
             $lawyer = $database->insert($lawyerQuery);
 
             if ($user === true) {
