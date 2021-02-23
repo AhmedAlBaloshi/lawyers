@@ -1,11 +1,6 @@
 /*******************************/
-
-
 /********* General CSS *********/
-
-
 /*******************************/
-
 body {
     color: #666666;
     background: #ffffff;
@@ -13,12 +8,7 @@ body {
     font-weight: 400;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
     font-family: 'EB Garamond', serif;
     font-weight: 600;
     font-style: italic;
@@ -30,9 +20,7 @@ a {
     transition: .3s;
 }
 
-a:hover,
-a:active,
-a:focus {
+a:hover, a:active, a:focus {
     color: #aa9166;
     outline: none;
     text-decoration: none;
@@ -75,15 +63,9 @@ a:focus {
     padding-top: 10px;
 }
 
-
 /**********************************/
-
-
 /********** Top Bar CSS ***********/
-
-
 /**********************************/
-
 .logo {
     padding: 15px 0;
     text-align: left;
@@ -105,15 +87,9 @@ a:focus {
     }
 }
 
-
 /**********************************/
-
-
 /*********** Nav Bar CSS **********/
-
-
 /**********************************/
-
 .nav-bar {
     position: relative;
     padding: 20px 0;
@@ -172,8 +148,7 @@ a:focus {
     .nav-bar.nav-sticky {
         padding: 10px 60px;
     }
-    .nav-bar,
-    .nav-bar .navbar {
+    .nav-bar, .nav-bar .navbar {
         background: #121518 !important;
     }
     .nav-bar .navbar-brand {
@@ -187,8 +162,7 @@ a:focus {
 }
 
 @media (max-width: 991.98px) {
-    .nav-bar,
-    .nav-bar .navbar {
+    .nav-bar, .nav-bar .navbar {
         padding: 3px 0;
         background: #121518 !important;
     }
@@ -208,15 +182,9 @@ a:focus {
     left: 80px;
 }
 
-
 /*******************************/
-
-
 /******** Carousel CSS *********/
-
-
 /*******************************/
-
 .carousel {
     position: relative;
     width: 100%;
@@ -226,8 +194,7 @@ a:focus {
     overflow: hidden;
 }
 
-.carousel .carousel-inner,
-.carousel .carousel-item {
+.carousel .carousel-inner, .carousel .carousel-item {
     position: relative;
     width: 100%;
     height: 100%;
@@ -329,15 +296,9 @@ a:focus {
     animation-duration: 1.5s;
 }
 
-
 /*******************************/
-
-
 /******* Section Header ********/
-
-
 /*******************************/
-
 .section-header {
     position: relative;
     width: 100%;
@@ -386,15 +347,9 @@ a:focus {
     }
 }
 
-
 /*******************************/
-
-
 /********** About CSS **********/
-
-
 /*******************************/
-
 .about {
     position: relative;
     width: 100%;
@@ -449,15 +404,9 @@ a:focus {
     }
 }
 
-
 /*******************************/
-
-
 /********* Service CSS *********/
-
-
 /*******************************/
-
 .service {
     position: relative;
     width: 100%;
@@ -531,13 +480,8 @@ a:focus {
     background: #aa9166;
 }
 
-
 /*******************************/
-
-
 /********* Feature CSS *********/
-
-
 /*******************************/
 
 .feature {
@@ -610,13 +554,8 @@ a:focus {
     object-fit: cover;
 }
 
-
 /*******************************/
-
-
 /*********** Team CSS **********/
-
-
 /*******************************/
 
 .team {
@@ -691,13 +630,8 @@ a:focus {
     color: #ffffff;
 }
 
-
 /*******************************/
-
-
 /*********** FAQs CSS **********/
-
-
 /*******************************/
 
 .faqs {
@@ -812,15 +746,9 @@ a:focus {
     background: #aa9166;
 }
 
-
 /*******************************/
-
-
 /******* Testimonial CSS *******/
-
-
 /*******************************/
-
 .testimonial {
     position: relative;
     padding: 45px 0;
@@ -872,8 +800,7 @@ a:focus {
     margin: 0;
 }
 
-.testimonial .owl-nav,
-.testimonial .owl-dots {
+.testimonial .owl-nav, .testimonial .owl-dots {
     margin-top: 15px;
     text-align: center;
 }
@@ -891,15 +818,9 @@ a:focus {
     background: #121518;
 }
 
-
 /*******************************/
-
-
 /********* Timeline CSS ********/
-
-
 /*******************************/
-
 .timeline {
     position: relative;
     padding: 45px 0;
@@ -966,8 +887,7 @@ a:focus {
     left: 0;
 }
 
-.timeline .timeline-container:first-child::before,
-.timeline .timeline-container:last-child::before {
+.timeline .timeline-container:first-child::before, .timeline .timeline-container:last-child::before {
     display: none;
 }
 
@@ -1019,30 +939,20 @@ a:focus {
     .timeline .timeline-container.right {
         left: 0%;
     }
-    .timeline .timeline-container.left::after,
-    .timeline .timeline-container.right::after,
-    .timeline .timeline-container.left::before,
-    .timeline .timeline-container.right::before {
+    .timeline .timeline-container.left::after, .timeline .timeline-container.right::after, .timeline .timeline-container.left::before, .timeline .timeline-container.right::before {
         width: 5px;
         height: 35px;
         left: 15px;
     }
-    .timeline .timeline-container.left .timeline-content,
-    .timeline .timeline-container.right .timeline-content {
+    .timeline .timeline-container.left .timeline-content, .timeline .timeline-container.right .timeline-content {
         border-left: 5px solid #aa9166;
         border-right: none;
     }
 }
 
-
 /*******************************/
-
-
 /******** Portfolio CSS ********/
-
-
 /*******************************/
-
 .portfolio {
     position: relative;
     padding: 45px 0;
@@ -1057,8 +967,7 @@ a:focus {
     text-align: center;
 }
 
-.portfolio #portfolio-flters li,
-.portfolio .load-more .btn {
+.portfolio #portfolio-flters li, .portfolio .load-more .btn {
     cursor: pointer;
     display: inline-block;
     margin: 5px;
@@ -1073,8 +982,7 @@ a:focus {
     transition: .3s;
 }
 
-.portfolio #portfolio-flters li:hover,
-.portfolio #portfolio-flters li.filter-active {
+.portfolio #portfolio-flters li:hover, .portfolio #portfolio-flters li.filter-active {
     background: #aa9166;
     color: #121518;
 }
@@ -1112,8 +1020,8 @@ a:focus {
 
 .portfolio img {
     position: relative;
-    width: 100%;
-    height: 100%;
+    width: 100%; 
+    height: 100%; 
     object-fit: cover;
 }
 
@@ -1169,12 +1077,9 @@ a:focus {
     font-size: 16px;
 }
 
-
 /*******************************/
 
-
 /********* Contact CSS *********/
-
 
 /*******************************/
 
@@ -1272,12 +1177,9 @@ a:focus {
     background: #aa9166;
 }
 
-
 /*******************************/
 
-
 /******* Single Page CSS *******/
-
 
 /*******************************/
 
@@ -1291,8 +1193,7 @@ a:focus {
     margin: 10px 0 15px 0;
 }
 
-.single .table,
-.single .list-group {
+.single .table, .single .list-group {
     margin-bottom: 30px;
 }
 
@@ -1317,12 +1218,9 @@ a:focus {
     padding-left: 18px;
 }
 
-
 /*******************************/
 
-
 /********** Newsletter *********/
-
 
 /*******************************/
 
@@ -1339,8 +1237,7 @@ a:focus {
     margin-bottom: 25px;
 }
 
-.newsletter .section-header h2::before,
-.newsletter .section-header h2::after {
+.newsletter .section-header h2::before, .newsletter .section-header h2::after {
     border-color: #ffffff;
 }
 
@@ -1377,12 +1274,9 @@ a:focus {
     background: #aa9166;
 }
 
-
 /*******************************/
 
-
 /********* Footer CSS **********/
-
 
 /*******************************/
 
@@ -1394,17 +1288,13 @@ a:focus {
     color: #ffffff;
 }
 
-.footer .footer-about,
-.footer .footer-link,
-.footer .footer-contact {
+.footer .footer-about, .footer .footer-link, .footer .footer-contact {
     position: relative;
     margin-bottom: 45px;
     color: #999999;
 }
 
-.footer .footer-about h2,
-.footer .footer-link h2,
-.footer .footer-contact h2 {
+.footer .footer-about h2, .footer .footer-link h2, .footer .footer-contact h2 {
     position: relative;
     margin-bottom: 30px;
     font-size: 25px;
@@ -1509,8 +1399,7 @@ a:focus {
 }
 
 @media (max-width: 768px) {
-    .footer .copyright p,
-    .footer .copyright .col-md-6:last-child p {
+    .footer .copyright p, .footer .copyright .col-md-6:last-child p {
         margin: 5px 0;
         text-align: center;
     }
@@ -1550,29 +1439,24 @@ a:focus {
     color: #121518;
     background: #aa9166;
 }
-
-.lawyer_profile {
+.lawyer_profile{
     font-family: sans-serif;
-    color: #121518;
-    ;
+    color: #121518;; 
     font-weight: bold;
     font-size: 18px;
 }
-
-.lawyer_profile span {
+.lawyer_profile span{
     font-weight: lighter;
     color: rgb(45, 45, 45);
     padding-left: 20px;
     font-size: 17px;
 }
-
-.lawyer_profile a :hover {
-    color: #aa9166;
+.lawyer_profile a :hover{
+    color: #aa9166 ;
     text-decoration: underline;
     transition: .1s;
 }
-
-.detail {
+.detail{
     position: relative;
     bottom: 15px;
     text-indent: 130px;
@@ -1582,8 +1466,7 @@ a:focus {
     font-size: 17px;
     color: rgb(45, 45, 45);
 }
-
-.celender {
+.celender{
     margin-left: 91px;
     width: 180px;
 }
