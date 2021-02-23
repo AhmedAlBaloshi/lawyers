@@ -23,8 +23,8 @@ $database->close();
                     <div class="col-md-6 col-lg-4">
                         <div class="footer-link">
                             <h2>Services Areas</h2>
-                            <?php foreach($services as $service): ?>
-                            <a href=""><?php echo $service['name'] ?></a>
+                            <?php foreach ($services as $service) : ?>
+                                <a href=""><?php echo $service['name'] ?></a>
                             <?php endforeach ?>
                         </div>
                     </div>
@@ -68,36 +68,6 @@ $database->close();
             <a href="">FQAs</a>
         </div>
     </div>
-    <div class="container copyright">
-        <div class="row">
-            <div class="col-md-6">
-                <p> All Copyright Reserved &copy; .</p>
-            </div>
-
-        </div>
-    </div>
 </div>
 <!-- Footer End -->
 <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
-
-
-<script>
-        function showPass() {
-            
-            document.getElementById('showPass').className = "fa fa-eye-slash";
-            document.getElementById('pass').type = "text";
-            document.getElementById('confPass').type = "text";
-            document.getElementById('showPass').setAttribute('onclick', 'hidePass()');
-            document.getElementById('showPass').setAttribute('id', 'hidePass');
-        }
-        
-        function hidePass() {
-            
-            document.getElementById('hidePass').className = "fa fa-eye";
-            document.getElementById('pass').type = "password";
-            document.getElementById('confPass').type = "password";
-            document.getElementById('hidePass').setAttribute( "onclick", "showPass()" );
-            document.getElementById('hidePass').setAttribute('id', 'showPass');
-        }
-
-    </script>

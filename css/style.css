@@ -1,6 +1,9 @@
 /*******************************/
+
 /********* General CSS *********/
+
 /*******************************/
+
 body {
     color: #666666;
     background: #ffffff;
@@ -64,8 +67,11 @@ a:hover, a:active, a:focus {
 }
 
 /**********************************/
+
 /********** Top Bar CSS ***********/
+
 /**********************************/
+
 .logo {
     padding: 15px 0;
     text-align: left;
@@ -88,12 +94,16 @@ a:hover, a:active, a:focus {
 }
 
 /**********************************/
+
 /*********** Nav Bar CSS **********/
+
 /**********************************/
+
 .nav-bar {
     position: relative;
     padding: 20px 0;
-    transition: .3s;
+    transition: .2s;
+    height: 150px;
 }
 
 .nav-bar.nav-sticky {
@@ -110,16 +120,12 @@ a:hover, a:active, a:focus {
     padding: 0;
 }
 
-.navbar-dark .navbar-nav .nav-link,
-.navbar-dark .navbar-nav .nav-link:focus,
-.navbar-dark .navbar-nav .nav-link:hover,
-.navbar-dark .navbar-nav .nav-link.active {
+.navbar-dark .navbar-nav .nav-link, .navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link.active {
     padding: 10px 10px 8px 10px;
     color: #ffffff;
 }
 
-.navbar-dark .navbar-nav .nav-link:hover,
-.navbar-dark .navbar-nav .nav-link.active {
+.navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link.active {
     color: #aa9166;
     transition: none;
 }
@@ -148,7 +154,7 @@ a:hover, a:active, a:focus {
     .nav-bar.nav-sticky {
         padding: 10px 60px;
     }
-    .nav-bar, .nav-bar .navbar {
+    .nav-bar, .nav-bar{
         background: #121518 !important;
     }
     .nav-bar .navbar-brand {
@@ -179,12 +185,23 @@ a:hover, a:active, a:focus {
 
 #nav-item {
     position: relative;
-    left: 80px;
+    right: -450px;
+}
+#nav{
+    position: relative;
+    bottom: 30px;
+}
+#nav-div{
+    position: relative;
+    bottom: 10px;
 }
 
 /*******************************/
+
 /******** Carousel CSS *********/
+
 /*******************************/
+
 .carousel {
     position: relative;
     width: 100%;
@@ -297,8 +314,11 @@ a:hover, a:active, a:focus {
 }
 
 /*******************************/
+
 /******* Section Header ********/
+
 /*******************************/
+
 .section-header {
     position: relative;
     width: 100%;
@@ -348,8 +368,11 @@ a:hover, a:active, a:focus {
 }
 
 /*******************************/
+
 /********** About CSS **********/
+
 /*******************************/
+
 .about {
     position: relative;
     width: 100%;
@@ -405,8 +428,11 @@ a:hover, a:active, a:focus {
 }
 
 /*******************************/
+
 /********* Service CSS *********/
+
 /*******************************/
+
 .service {
     position: relative;
     width: 100%;
@@ -481,7 +507,9 @@ a:hover, a:active, a:focus {
 }
 
 /*******************************/
+
 /********* Feature CSS *********/
+
 /*******************************/
 
 .feature {
@@ -555,7 +583,9 @@ a:hover, a:active, a:focus {
 }
 
 /*******************************/
+
 /*********** Team CSS **********/
+
 /*******************************/
 
 .team {
@@ -631,7 +661,9 @@ a:hover, a:active, a:focus {
 }
 
 /*******************************/
+
 /*********** FAQs CSS **********/
+
 /*******************************/
 
 .faqs {
@@ -747,8 +779,11 @@ a:hover, a:active, a:focus {
 }
 
 /*******************************/
+
 /******* Testimonial CSS *******/
+
 /*******************************/
+
 .testimonial {
     position: relative;
     padding: 45px 0;
@@ -819,8 +854,11 @@ a:hover, a:active, a:focus {
 }
 
 /*******************************/
+
 /********* Timeline CSS ********/
+
 /*******************************/
+
 .timeline {
     position: relative;
     padding: 45px 0;
@@ -951,8 +989,11 @@ a:hover, a:active, a:focus {
 }
 
 /*******************************/
+
 /******** Portfolio CSS ********/
+
 /*******************************/
+
 .portfolio {
     position: relative;
     padding: 45px 0;
@@ -1020,8 +1061,8 @@ a:hover, a:active, a:focus {
 
 .portfolio img {
     position: relative;
-    width: 100%; 
-    height: 100%; 
+    width: 100%;
+    height: 100%;
     object-fit: cover;
 }
 
@@ -1283,7 +1324,7 @@ a:hover, a:active, a:focus {
 .footer {
     position: relative;
     margin-top: 45px;
-    padding-top: 180px;
+    padding-top: 50px;
     background: #121518;
     color: #ffffff;
 }
@@ -1439,24 +1480,29 @@ a:hover, a:active, a:focus {
     color: #121518;
     background: #aa9166;
 }
-.lawyer_profile{
+
+.lawyer_profile {
     font-family: sans-serif;
-    color: #121518;; 
+    color: #121518;
+    ;
     font-weight: bold;
     font-size: 18px;
 }
-.lawyer_profile span{
+
+.lawyer_profile span {
     font-weight: lighter;
     color: rgb(45, 45, 45);
     padding-left: 20px;
     font-size: 17px;
 }
-.lawyer_profile a :hover{
-    color: #aa9166 ;
+
+.lawyer_profile a :hover {
+    color: #aa9166;
     text-decoration: underline;
     transition: .1s;
 }
-.detail{
+
+.detail {
     position: relative;
     bottom: 15px;
     text-indent: 130px;
@@ -1466,7 +1512,49 @@ a:hover, a:active, a:focus {
     font-size: 17px;
     color: rgb(45, 45, 45);
 }
-.celender{
+
+.celender {
     margin-left: 91px;
     width: 180px;
+}
+
+.pass {
+    background-color: #000000;
+    height: 60px;
+}
+
+.pass span {
+    position: relative;
+    left: 235px;
+    bottom: 42px;
+    font-size: 18px;
+    cursor: pointer;
+}
+.lawyer_drop {
+    width: 185px;
+    position: relative;
+    left: 980px;
+    bottom: 50px;
+}
+.lawyer_drop .btn{
+    color: #ffffff;
+    border: 2px solid #aa9166;
+    border-radius: 0;
+    background-color: black;
+}
+
+.lawyer_drop .btn:hover {
+    background: #aa9166;
+}
+.lawyer_drop i{
+    margin-right: 5px;
+}
+.lawyer_drop a:hover{
+    background: #aa9166;
+}
+.user_describe{
+  width: 500px;
+  height: 20px;
+  overflow: auto;
+  text-align: justify;
 }

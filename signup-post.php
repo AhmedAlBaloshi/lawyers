@@ -6,7 +6,7 @@ if(isset($_POST['name']) && isset($_POST['email']) && isset($_POST['password']) 
     $email = $_POST['email'];
     $pass = $_POST['password'];
     $confirmPass = $_POST['confirm_password'];
-    $role = 'CUSTOMER';
+    $role = $_POST['role'];
     
     if ($pass === $confirmPass) {
         $query = "INSERT INTO `users`  (`name`, `email`, `password`,`role`) VALUES ('$name', '$email', '$pass', '$role')";
