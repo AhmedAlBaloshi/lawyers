@@ -43,29 +43,30 @@
                                     <input type="file" class="form-control" name="image" placeholder="Image" required="required" accept="image/*" />
                                 </div>
                                 <div class="form-group">
-                                <select class="form-control  services" name="region_id">
-                                    <option>Select Region</option>
-                                    <?php foreach ($regions as $region) :
-                                    ?><option value="<?php echo $region['id'] ?>"> <?php echo $region['name'] ?></option>
-                                    <?php endforeach ?>
-                                </select>
+                                    <select class="form-control  services" name="region_id">
+                                        <option>Select Region</option>
+                                        <?php foreach ($regions as $region) :
+                                        ?><option value="<?php echo $region['id'] ?>"> <?php echo $region['name'] ?></option>
+                                        <?php endforeach ?>
+                                    </select>
                                 </div>
                                 <div class="form-group">
-                                <select class="form-control services" name="service">
-                                    <option>Select Service</option>
-                                    <?php foreach ($services as $service) :
-                                    ?><option value="<?php echo $service['id'] ?>"> <?php echo $service['name'] ?></option>
-                                    <?php endforeach ?>
-                                </select>
+                                    <select class="form-control services" name="service">
+                                        <option>Select Service</option>
+                                        <?php foreach ($services as $service) :
+                                        ?><option value="<?php echo $service['id'] ?>"> <?php echo $service['name'] ?></option>
+                                        <?php endforeach ?>
+                                    </select>
                                 </div>
                                 <div class="form-group">
                                     <input type="email" class="form-control text-center" name="email" placeholder="Email" required="required" />
                                 </div>
-                                <div class="form-group">
-                                    <input type="password" class="form-control text-center" name="password" placeholder="Password" required="required" />
+                                <div class="form-group pass">
+                                    <input type="password" class="form-control text-center" id="pass" name="password" placeholder="Password" required="required" /><span><i onclick="showPass()" class="fa fa-eye-slash" id="showPass" aria-hidden="true"></i></span>
                                 </div>
                                 <div class="form-group">
-                                    <input type="password" class="form-control text-center" name="confirm_password" placeholder="Confirm Password" required="required" />
+                                    <input type="password" class="form-control text-center" id="confPass" name="confirm_password" placeholder="Confirm Password" required="required" />
+                                    <input type="hidden" name="role" value="LAWYER">
                                 </div>
                                 <div class="form-group">
                                     <textarea class="form-control text-center" name="detail" placeholder="Lawyer Detail" required="required" rows="2" cols="50"></textarea>
@@ -84,8 +85,29 @@
         <!-- Register form End-->
 
         <?php include "layout/footer.php" ?>
-
     </div>
+
+    <!-- Show & Hide Password Button Script -->
+    <script>
+        function showPass() {
+
+            document.getElementById('showPass').className = "fa fa-eye";
+            document.getElementById('pass').type = "text";
+            document.getElementById('confPass').type = "text";
+            document.getElementById('showPass').setAttribute('onclick', 'hidePass()');
+            document.getElementById('showPass').setAttribute('id', 'hidePass');
+        }
+
+        function hidePass() {
+
+            document.getElementById('hidePass').className = "fa fa-eye-slash";
+            document.getElementById('pass').type = "password";
+            document.getElementById('confPass').type = "password";
+            document.getElementById('hidePass').setAttribute("onclick", "showPass()");
+            document.getElementById('hidePass').setAttribute('id', 'showPass');
+        }
+    </script>
+    <!-- End Show & Hide Password Button Script -->
 </body>
 
 </html>

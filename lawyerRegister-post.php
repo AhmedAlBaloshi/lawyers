@@ -10,14 +10,13 @@
         $region_id = $_POST['region_id'];
         $confirmPass = $_POST['confirm_password'];
         $detail = $_POST['detail'];
-        $role = 'LAWYER';
+        $role = $_POST['role'];
 
         if ($pass === $confirmPass) {
             $database = new Database();
             $query = "INSERT INTO `users`  (`name`, `email`, `password`,`role`) VALUES ('$name', '$email', '$pass', '$role')";
             $user = $database->insert($query);
             $user_id = $database->getLastId();
-
             $lawyerQuery = "INSERT INTO lawyers (`user_id`, `image`, `detail`, `region_id`, `service_id`) VALUES ($user_id, '$image', '$detail', $region_id, $service)";
             $lawyer = $database->insert($lawyerQuery);
 
