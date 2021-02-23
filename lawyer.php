@@ -11,15 +11,23 @@
     $services = $database->query($query);
 
     $service_id;
+    $lawyer = '';
     $query = "SELECT U.id AS `id`, U.`name` AS `name`, L.image AS  `image`, S.`name` AS `service_name` 
                 FROM users U
                 JOIN lawyers L ON U.id = L.user_id
                 JOIN services S 
-                ON L.service_id = S.id";
+                ON L.service_id = S.id
+                JOIN region R 
+                ON R.id = L.region_id";
 
-    if (isset($_GET['service']) && !empty($_GET['service'])) {
+    if (isset($_GET['service'])) {
         $service_id = $_GET['service'];
         $query = $query . " WHERE S.id = " . $service_id;
+    }
+    
+    if (isset($_GET['lawyer'])) {
+        $lawyer = $_GET['lawyer'];
+        $query = $query . " WHERE U.name LIKE '%" . $lawyer . "%' OR R.name LIKE '%" . $lawyer . "%'";
     }
 
     $lawyers = $database->query($query);
@@ -37,8 +45,10 @@
                     <h2>Search about for lawyer</h2>
                 </div>
                 <div class="form" id="search">
-                    <input class="form-control" placeholder="search">
+                  <form action="lawyer.php" method="GET">
+                    <input class="form-control" placeholder="search Lawyer & Location" value="<?php echo $lawyer?>" name="lawyer">
                     <button class="btn">Search</button>
+                  </form>
                 </div>
             </div>
         </div>
